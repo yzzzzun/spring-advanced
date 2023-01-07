@@ -23,6 +23,6 @@ public class OrderServiceV4 {
 				return null;
 			}
 		};
-		template.execute("OrderRepository.save()");
+		template.execute("OrderService.orderItem()");
 	}
 }

@@ -18,6 +18,9 @@ public class OrderRepositoryV4 {
 		AbstractTemplate<Void> template = new AbstractTemplate<Void>(trace) {
 			@Override
 			protected Void call() {
+				if (itemId.equals("ex")) {
+					throw new IllegalStateException("예외 발생!");
+				}
 				sleep(1000);
 				return null;
 			}
