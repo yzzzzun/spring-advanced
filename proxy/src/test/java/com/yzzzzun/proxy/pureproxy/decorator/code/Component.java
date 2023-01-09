@@ -1,4 +1,4 @@
-package com.yzzzzun.proxy.decorator.code;
+package com.yzzzzun.proxy.pureproxy.decorator.code;
 
 public interface Component {
 

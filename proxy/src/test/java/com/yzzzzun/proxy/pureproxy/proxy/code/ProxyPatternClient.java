@@ -1,4 +1,4 @@
-package com.yzzzzun.proxy.pureproxy.code;
+package com.yzzzzun.proxy.pureproxy.proxy.code;
 
 public class ProxyPatternClient {
 	private Subject subject;

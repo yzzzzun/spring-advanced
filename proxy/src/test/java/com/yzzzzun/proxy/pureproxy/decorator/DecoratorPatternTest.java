@@ -1,12 +1,12 @@
-package com.yzzzzun.proxy.decorator;
+package com.yzzzzun.proxy.pureproxy.decorator;
 
 import org.junit.jupiter.api.Test;
 
-import com.yzzzzun.proxy.decorator.code.Component;
-import com.yzzzzun.proxy.decorator.code.DecoratorPatternClient;
-import com.yzzzzun.proxy.decorator.code.MessageDecorator;
-import com.yzzzzun.proxy.decorator.code.RealComponent;
-import com.yzzzzun.proxy.decorator.code.TimeDecorator;
+import com.yzzzzun.proxy.pureproxy.decorator.code.Component;
+import com.yzzzzun.proxy.pureproxy.decorator.code.DecoratorPatternClient;
+import com.yzzzzun.proxy.pureproxy.decorator.code.MessageDecorator;
+import com.yzzzzun.proxy.pureproxy.decorator.code.RealComponent;
+import com.yzzzzun.proxy.pureproxy.decorator.code.TimeDecorator;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,10 +1,10 @@
-package com.yzzzzun.proxy.pureproxy;
+package com.yzzzzun.proxy.pureproxy.proxy;
 
 import org.junit.jupiter.api.Test;
 
-import com.yzzzzun.proxy.pureproxy.code.CacheProxy;
-import com.yzzzzun.proxy.pureproxy.code.ProxyPatternClient;
-import com.yzzzzun.proxy.pureproxy.code.RealSubject;
+import com.yzzzzun.proxy.pureproxy.proxy.code.CacheProxy;
+import com.yzzzzun.proxy.pureproxy.proxy.code.ProxyPatternClient;
+import com.yzzzzun.proxy.pureproxy.proxy.code.RealSubject;
 
 public class ProxyPatternTest {
 
