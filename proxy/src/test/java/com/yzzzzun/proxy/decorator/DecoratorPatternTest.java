@@ -6,6 +6,7 @@ import com.yzzzzun.proxy.decorator.code.Component;
 import com.yzzzzun.proxy.decorator.code.DecoratorPatternClient;
 import com.yzzzzun.proxy.decorator.code.MessageDecorator;
 import com.yzzzzun.proxy.decorator.code.RealComponent;
+import com.yzzzzun.proxy.decorator.code.TimeDecorator;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,6 +25,15 @@ public class DecoratorPatternTest {
 		Component realComponent = new RealComponent();
 		MessageDecorator messageDecorator = new MessageDecorator(realComponent);
 		DecoratorPatternClient client = new DecoratorPatternClient(messageDecorator);
+		client.execute();
+	}
+
+	@Test
+	void decorator2() {
+		Component realComponent = new RealComponent();
+		MessageDecorator messageDecorator = new MessageDecorator(realComponent);
+		TimeDecorator timeDecorator = new TimeDecorator(messageDecorator);
+		DecoratorPatternClient client = new DecoratorPatternClient(timeDecorator);
 		client.execute();
 	}
 }
