@@ -5,12 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
-import com.yzzzzun.proxy.config.v1_proxy.ConcreteProxyConfig;
+import com.yzzzzun.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig;
 import com.yzzzzun.proxy.trace.logtrace.LogTrace;
 import com.yzzzzun.proxy.trace.logtrace.ThreadLocalLogTrace;
 
 // @Import({AppV1Config.class, AppV2Config.class})
-@Import({ConcreteProxyConfig.class})
+@Import({DynamicProxyFilterConfig.class})
 @SpringBootApplication(scanBasePackages = "com.yzzzzun.proxy.app")
 public class ProxyApplication {
 
